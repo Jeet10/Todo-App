@@ -32,7 +32,7 @@ app.get('/allTodos', async (req, res) => {
     // Get all Todos from MongoDB
     const allTodos = await todo.find({});
     res.json({
-        allTodos
+        todos: allTodos
     })
 })
 
